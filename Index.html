@@ -7,7 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css"></link>
+    
     <title>Foodie Finder</title>
 </head>
 
@@ -33,19 +35,44 @@
             <div class="row">
                 <input class="col border bg-light" type="search" value="Search" id="searchBar">
                 <div class="dropdown">
-                    <button id= "filters" class="btn dropdown-toggle col px-sm-5 p-3 border " style="background-color: rgb(216,56,38);" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Filters
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2" >
-                      <button class="dropdown-item" type="button">Food Type</button>
-                      <button class="dropdown-item" type="button">Zipcode</button>
-                      <button class="dropdown-item" type="button">Price</button>
-                    </div>
                   </div>
-                <button class="btn t-20 border " type="submit" style="background-color:rgb(216,56,38);" id="cityButton">Submit</button>     
+                <button class="btn t-20 border " type="submit" style="background-color:rgb(216,56,38);" id="submitBtn">Submit</button>     
             </div>
           </div>
        </div>
+       <div class="mx-auto row mx-md-n5" style="width:200px" id="filterBtns">
+       <div class="row">
+       <div class="dropdown">
+        <button id= "foodTypeFilter" class="btn dropdown-toggle col px-sm-1  border ml-3" style="background-color: rgb(216,56,38);" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Food Type
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <button class="dropdown-item" type="button">Italian</button>
+          <button class="dropdown-item" type="button">Vegetarian</button>
+          <button class="dropdown-item" type="button">Chinese</button>
+          <button class="dropdown-item" type="button">Thai</button>
+          <button class="dropdown-item" type="button">Mediterranean</button>
+          <button class="dropdown-item" type="button">Vegan</button>
+          <button class="dropdown-item" type="button">Mexican</button>
+            </div>
+            </div>
+            </div>
+        <div class="dropdown">
+            <button id= "priceFilter" class="btn dropdown-toggle col px-sm-1  border " style="background-color: rgb(216,56,38);" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Price
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">$</button>
+                <button class="dropdown-item" type="button">$$</button>
+                <button class="dropdown-item" type="button">$$$</button>
+                <button class="dropdown-item" type="button">$$$$</button>
+                <button class="dropdown-item" type="button">$$$$$</button>
+              
+                    </div>
+                    </div>
+                    </div>
+        </div>  
+    
 <br>
 <br>
 <br>
@@ -151,7 +178,6 @@
 
 
 </html>
-
 
 
 
