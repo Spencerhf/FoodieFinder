@@ -81,3 +81,11 @@
     display: inline-flex;
     flex-flow: row-reverse;
 }
+
+
+
+#cardBox{
+    
+    height: 360px;
+    width:360p
+}
