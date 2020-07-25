@@ -1,5 +1,4 @@
 
-
 @font-face{
     font-family: 'Chicken Pie';
     src:url(CHICKEN\ Pie.ttf).ttf)
@@ -75,3 +74,10 @@
 
 }
 
+#filterBtns{
+    width: 200px;
+    position: absolute;
+    left: 350px;
+    display: inline-flex;
+    flex-flow: row-reverse;
+}
