@@ -1,26 +1,35 @@
+  
 <!DOCTYPE html>
+<html>
 <head>
 
-    <link src="style.css"></link>
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
-
+    
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"></link>
+    
     <title>Foodie Finder</title>
+
 </head>
+
 <body>
-    <nav class="navbar navbar-light" height="100px" style="background-color:#3bfffc">
+    <nav class="navbar navbar-light" height="100px" style="background-color:#18b1d8">
   
         <a class="navbar-brand" href="#">
           
-          <img src="https://tse2.mm.bing.net/th?id=OIP.FP6OOVVP_-V4Vl9s14-h6AHaHa&pid=Api&P=0&w=300&h=300"  width="75" height="75" alt="" loading="lazy" class="d-inline-block align-top border rounded border-dark"></i>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRdNZtiaxypcb2wo3XgNcKML6pEwV9biNxDHg&usqp=CAU"  width="75" height="75" alt="" loading="lazy" class="d-inline-block align-top border rounded border-dark"></i>
           
         </a>
         <div class="container">
           <div class="row justify-content-center" id="headerText">
-            <h1 class="text-dark-50 col-lg-12" style="background-color:#3bfffc"> Foodie Finder</h1>
+            <h1 class="text-dark-50 col-lg-12 text-center" style="background-color:#18b1d8"> Foodie Finder</h1>
           </div>
         </div>
       </nav>
@@ -30,88 +39,60 @@
       <div class="container mp-20-lg" id="inputTabs">
           <div class="column">
             <div class="row">
-                <input class="col border bg-light" type="search" value="Search" id="searchBar">
+                <input class="col border bg-light" type="search" placeholder="Search" id="searchBar">
                 <div class="dropdown">
-                    <button id= "filters" class="btn dropdown-toggle col px-sm-5 p-3 border " style="background-color: #ff6c3b;" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Filters
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2" >
-                      <button class="dropdown-item" type="button">Food Type</button>
-                      <button class="dropdown-item" type="button">Zipcode</button>
-                      <button class="dropdown-item" type="button">Price</button>
-                    </div>
                   </div>
-                <button class="btn t-20 border " type="submit" style="background-color:#ff6c3b;" id="cityButton">Submit</button>     
+                <button class="btn t-20 border " type="submit" style="background-color:rgb(216,56,38);" id="submitBtn">Submit</button>     
             </div>
           </div>
        </div>
-<br>
-<br>
-<br>
-<br>
-        <div class ="container-fluid w-50 bg-light align-middle" id="cardBox">
-                    Put this text inside of a box for now
-                    <figure class="figure">
-                        <img src="..." class="figure-img img-fluid rounded float-right" alt="...">
-                        <figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
-                      </figure>
-                <div class="card-columns">
-                    <div class="card w-25 rounded-lg">
-                        <h5 class="card-title">Card title</h5>
-                      <img src="..." class="card-img-top" alt="...">
-                      <a href="#" class="btn " style="background-color: #ff6c3b;">Button</a>
+       <div class="mx-auto row mx-md-n5" style="width:200px" id="filterBtns">
+       <div class="row">
+       <div class="dropdown">
+        <button id= "foodTypeFilter" class="btn dropdown-toggle col px-sm-1  border ml-3" style="background-color: rgb(216,56,38);" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Food Type
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <button class="dropdown-item" type="button">Italian</button>
+          <button class="dropdown-item" type="button">Vegetarian</button>
+          <button class="dropdown-item" type="button">Chinese</button>
+          <button class="dropdown-item" type="button">Thai</button>
+          <button class="dropdown-item" type="button">Mediterranean</button>
+          <button class="dropdown-item" type="button">Vegan</button>
+          <button class="dropdown-item" type="button">Mexican</button>
+            </div>
+            </div>
+            </div>
+        <div class="dropdown">
+            <button id= "priceFilter" class="btn dropdown-toggle col px-sm-1  border " style="background-color: rgb(216,56,38);" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Price
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">$</button>
+                <button class="dropdown-item" type="button">$$</button>
+                <button class="dropdown-item" type="button">$$$</button>
+                <button class="dropdown-item" type="button">$$$$</button>
+                <button class="dropdown-item" type="button">$$$$$</button>
+              
                     </div>
-                    <div class="card w-25 rounded-lg">
-                        <h5 class="card-title">Card title</h5>
-                        <img src="..." class="card-img-top" alt="...">
-                        <a href="#" class="btn" style="background-color: #ff6c3b;">Button</a>
-                      </div>
-                      <div class="card w-25 rounded-lg">
-                        <h5 class="card-title">Card title</h5>
-                        <img src="..." class="card-img-top" alt="...">
-                        <a href="#" class="btn" style="background-color: #ff6c3b;">Button</a>
-                      </div>
-                </div>
-                <div class="card-columns">
-                      <div class="card w-25 rounded-lg">
-                        <h5 class="card-title">Card title</h5>
-                        <img src="..." class="card-img-top" alt="...">
-                        <a href="#" class="btn" style="background-color: #ff6c3b;">Button</a>
-                      </div>
-
-                      <div class="card w-25 rounded-lg">
-                        <h5 class="card-title">Card title</h5>
-                          <img src="..." class="card-img-top" alt="...">
-                          <a href="#" class="btn" style="background-color: #ff6c3b;">Button</a>
-                        </div>
-                        <div class="card w-25 rounded-lg">
-                            <h5 class="card-title">Card title</h5>
-                          <img src="..." class="card-img-top" alt="...">
-                          <a href="#" class="btn" style="background-color: #ff6c3b;">Button</a>
-                        </div>
                     </div>
-                <div class="card-columns">
-                        <div class="card w-25">
-                            <h5 class="card-title rounded-lg">Card title</h5>
-                            <img src="..." class="card-img-top" alt="...">
-                            <a href="#" class="btn" style="background-color:#ff6c3b">Button</a>
-                          </div>
-
-                          <div class="card w-25 rounded-lg">
-                            <h5 class="card-title">Card title</h5>
-                              <img src="..." class="card-img-top" alt="...">
-                              <a href="#" class="btn" style="background-color: #ff6c3b;">Button</a>
-                            </div>
-                            <div class="card w-25">
-                                <h5 class="card-title">Card title</h5>
-                              <img src="..." class="card-img-top" alt="...">
-                              <a href="#" class="btn" style="background-color: #ff6c3b;">Button</a>
-                            </div>   
-                </div>
-                
+                    </div>
+        </div>  
+    
+<br>
+<br>
+<br>
+<br>
+        <div class ="container-fluid w-75 bg-light align-middle">
+          <div class="row bg-light align-middle">
+            <div class="col-md-9"  id="resultsContainer">
+        
+            </div>
+            <div id="map" class="align-middle col-md-3" style="width: 300px; height: 300px;"></div>
+          </div>
         </div>
         
-
+        
 
 
 
@@ -127,17 +108,21 @@
         </div>
     </main>
           
-    <footer class="footer mt-auto py-3" style="background-color:#3bfffc;">
+    <footer class="footer mt-auto py-3" style="background-color:#18b1d8;">
         <div class="container-fluid">
             <span class="text-muted">Foodie Finder LLC 2020 </span>
         </div>
     </footer>
        
-
+    
+    <script src="script.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8ZOinxJf_D6YZELxQE5HZsjdPIa6Ml0A&libraries=places&callback=locationIdFunc">
+    </script>
 </body>
 
 
-<html>
+
 
 
 
@@ -150,7 +135,6 @@
 
 
 </html>
-
 
 
 
