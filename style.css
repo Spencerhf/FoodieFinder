@@ -1,4 +1,3 @@
-
 @font-face{
     font-family: 'Chicken Pie';
     src:url(CHICKEN\ Pie.ttf).ttf)
@@ -24,20 +23,14 @@
     
   }
   
-  body{
-    background-image: url("https://www.olympus-tours.com/blog/assetsBlog/2016/10/mexican-food2.jpg");
-    background-attachment: fixed;
-    background-size: 100% 100%;
-      padding:0px;
-      margin:0px;
-      border-collapse: collapse;
-      border-spacing: 0;
-      background-repeat: no-repeat;
-  }
+  
 
-.navbar{
+#homeText{
     font-family: 'Chicken Pie';
     color: white;
+    top:200px;
+    font-size:xxx-large;
+
 }
 
 #inputTabs.container {
@@ -69,23 +62,58 @@
     line-break: anywhere;
 }
 
-
 #searchBar{
 
 }
 
+
+
+/*Filters*/
 #filterBtns{
     width: 200px;
-    position: absolute;
-    left: 350px;
-    display: inline-flex;
     flex-flow: row-reverse;
+    display: inline-flex;
+    justify-content: space-evenly;
 }
-
-
 
 #cardBox{
     
     height: 360px;
     width:360p
+}
+
+#foodFilter{
+    top: 5px;
+}
+
+
+#priceFilter{
+    width: -webkit-max-content;
+}
+
+.nav-item{
+    color: white;
+}
+
+
+/*Sections*/
+
+
+#section-1{
+    background-color: #18b1d8;
+    background-size: 100%;
+    width: 100vw;
+    left: -50px;
+    height:100vh;
+}
+
+
+
+#section-2{
+background-image: url("https://www.olympus-tours.com/blog/assetsBlog/2016/10/mexican-food2.jpg");
+background-attachment: fixed;
+width: 1240px;
+left: -50px;
+width: 100vw;
+height: 100vh;
 }
