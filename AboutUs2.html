@@ -1,61 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--Add comments-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css"></link>
+
+<title>FoodieFinder - Who are we</title>
 <style>
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
+    font-family: 'Open Sans Condensed', 'sans-serif';
+  margin: 100;
 }
-
 html {
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 .column {
   float: left;
-  width: 25.3%;
+  width: 25%;
   margin-bottom: 16px;
   padding: 0 8px;
 }
-
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
 }
-
 .about-section {
   padding: 6px;
   text-align: center;
   background-color: #474e5d;
   color: white;
+  font-family: 'Open Sans Condensed', 'sans-serif';
 }
-
 .about-text {
-    padding: 5px;
+    padding: 20px;
     text-align: center;
+    margin-right: 230px;
+    margin-left: 230px;
     margin-bottom: auto;
+    font-family: 'Open Sans Condensed', 'sans-serif';
+    font: size 16;
 }
-
 .container {
   padding: 0 16px;
 }
-
-
 .container::after, .row::after {
   content: "";
   clear: both;
   display: table;
 }
-
 .title {
   color: grey;
 }
-
 .button {
   border: none;
   outline: 0;
@@ -67,32 +72,43 @@ html {
   cursor: pointer;
   width: 100%;
 }
-
 .button:hover {
   background-color: #555;
 }
 
-@media screen and (max-width: 50px) {
-  .column {
-    width: 50%;
-    display: block;
-  }
 }
+
 </style>
 </head>
+
 <body>
+   
+<!---Nav Bar--->
+    <nav class="navbar navbar-light" height="100px" style="background-color:#18b1d8">
+        <a class="navbar-brand" href="#">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRdNZtiaxypcb2wo3XgNcKML6pEwV9biNxDHg&usqp=CAU"  width="75" height="75" alt="" loading="lazy" class="d-inline-block align-top border rounded border-dark"></i>
+        </a>
+        <div class="container">
+        <div class="row justify-content-center" id="headerText">
+        <h1 class="text-dark-50 col-lg-12 text-center" style="background-color:#18b1d8"> Foodie Finder</h1>
+        </div>
+        </div>
+      </nav>
+      <br>
+      
 
-<div class="about-section">
-  <h1>Insert BHill Sticky Header</h1>
-  
-</div>
 
+<!---About Us Details-->
 <h1 style="text-align:center">About Us</h1>
 <div class="about-text">
-    <p>Foodie Finder was founded in 2020 out of passion to locate the best and most convienient restaraunts</p>
-    <p>We serve a community customers whom desire the options based on location.</p>
+    <h4>FoodieFinder is a technology company that connects people with their favorite restaraunt in their cities. 
+    We do this by empowering them with access to data and in turn, generate new ways for people to search and find food. We started by facilitating door-to-door delivery, but we see this as just the beginning of connecting people with possibility — easier evenings, happier days, bigger savings accounts, wider nets and stronger communities.
+    With your favorite restaurants at your fingertips, FoodFinder satisfies your cravings and connects you with possibilities.</h4>
 
+<br>
+<br>
 
+<!--Cards Displayed on Page-->
 <h1 style="text-align:center">Our Team</h1>
 <div class="row">
   <div class="column">
@@ -107,7 +123,6 @@ html {
       </div>
     </div>
   </div>
-
   <div class="column">
     <div class="card">
       <img src="Spencer.png" alt="Spencer" style="width:100%">
@@ -120,7 +135,6 @@ html {
       </div>
     </div>
   </div>
-  
   <div class="column">
     <div class="card">
       <img src="BHill.png" alt="Brandon" style="width:90%">
@@ -133,9 +147,7 @@ html {
       </div>
     </div>
   </div>
-</div>
-
-<div class="column">
+  <div class="column">
     <div class="card">
       <img src="Kendra.png" alt="Kendra" style="width:90%">
       <div class="container">
@@ -148,7 +160,29 @@ html {
     </div>
   </div>
 </div>
+</div>
 
+
+
+ <!--Footer-->
+ <main role="main" class="flex-shrink-0">
+    <div class="container-fluid">
+        <h1 class="mt-5"></h1>
+        <p class="lead"></p>
+        <p><a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/sticky-footer-navbar/"></a> </p>
+        <div class="d-inline-block float-right">
+        </div>
+    </div>
+</main>
+      
+<footer class="footer mt-auto py-3" style="background-color:#18b1d8;">
+    <div class="container-fluid">
+        <span class="text-muted">Foodie Finder LLC 2020 </span>
+    </div>
+</footer>
+       
+    <script src="script.js"></script>
 
 </body>
 </html>
+
