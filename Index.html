@@ -10,113 +10,209 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css"></link>
     
-    <title>Foodie Finder</title>
+    <title>Home</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-light" height="100px" style="background-color:#18b1d8">
+
   
-        <a class="navbar-brand" href="#">
-          
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRdNZtiaxypcb2wo3XgNcKML6pEwV9biNxDHg&usqp=CAU"  width="75" height="75" alt="" loading="lazy" class="d-inline-block align-top border rounded border-dark"></i>
-          
-        </a>
-        <div class="container">
-          <div class="row justify-content-center" id="headerText">
-            <h1 class="text-dark-50 col-lg-12 text-center" style="background-color:#18b1d8"> Foodie Finder</h1>
-          </div>
-        </div>
-      </nav>
-      <br>
-      <br>
-      <br>
-      <div class="container mp-20-lg" id="inputTabs">
-          <div class="column">
-            <div class="row">
-                <input class="col border bg-light" type="search" placeholder="Search" id="searchBar">
-                <div class="dropdown">
-                  </div>
-                <button class="btn t-20 border " type="submit" style="background-color:rgb(216,56,38);" id="submitBtn">Submit</button>     
-            </div>
-          </div>
-       </div>
-       <div class="mx-auto row mx-md-n5" style="width:200px" id="filterBtns">
-       <div class="row">
-       <div class="dropdown">
-        <button id= "foodTypeFilter" class="btn dropdown-toggle col px-sm-1  border ml-3" style="background-color: rgb(216,56,38);" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Food Type
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-          <button class="dropdown-item" type="button">Italian</button>
-          <button class="dropdown-item" type="button">Vegetarian</button>
-          <button class="dropdown-item" type="button">Chinese</button>
-          <button class="dropdown-item" type="button">Thai</button>
-          <button class="dropdown-item" type="button">Mediterranean</button>
-          <button class="dropdown-item" type="button">Vegan</button>
-          <button class="dropdown-item" type="button">Mexican</button>
-            </div>
-            </div>
-            </div>
-        <div class="dropdown">
-            <button id= "priceFilter" class="btn dropdown-toggle col px-sm-1  border " style="background-color: rgb(216,56,38);" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   Price
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <button class="dropdown-item" type="button">$</button>
-                <button class="dropdown-item" type="button">$$</button>
-                <button class="dropdown-item" type="button">$$$</button>
-                <button class="dropdown-item" type="button">$$$$</button>
-                <button class="dropdown-item" type="button">$$$$$</button>
-              
-                    </div>
-                    </div>
-                    </div>
-        </div>  
+  
+
+   
     
-<br>
-<br>
-<br>
-<br>
-        <div class ="container-fluid w-50 bg-light align-middle" id="cardBox">
-        
-        </div>
-        
+      
+    <!--Landing Page(Section 1)-->
 
-
-
-
-       </div>
-      <!--Footer-->
-      <main role="main" class="flex-shrink-0">
-        <div class="container-fluid">
-            <h1 class="mt-5"></h1>
-            <p class="lead"></p>
-            <p><a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/sticky-footer-navbar/"></a> </p>
-            <div class="d-inline-block float-right">
+    
+          <div class="container-fluid">
+            <div class="section" id="section-1">
+              <nav class="navbar navbar-expand-lg" style="background-color: #18b1d8;width:inherit">
+            <a class="navbar-brand" href="#">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRdNZtiaxypcb2wo3XgNcKML6pEwV9biNxDHg&usqp=CAU"  width="75" height="75" alt="" loading="lazy" class="d-inline-block align-top border rounded border-dark"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end"  id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#section-1">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#section-2">Search</a>
+                <a class="nav-item nav-link" href="section-3">About Us</a>
+              </div>
+            </div>
+          </nav>
+                <h1 class="text-dark-50 col-lg-12 text-center"  id="homeText"> Foodie Finder</h1>
             </div>
         </div>
-    </main>
-          
-    <footer class="footer mt-auto py-3" style="background-color:#18b1d8;">
-        <div class="container-fluid">
-            <span class="text-muted">Foodie Finder LLC 2020 </span>
+
+      <!--Search Page (Section 2)-->
+         
+      
+        <div class="section" id="section-2">
+          <nav class="navbar navbar-expand-lg" style="background-color: #18b1d8; width:inherit;">
+            <a class="navbar-brand" href="#">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRdNZtiaxypcb2wo3XgNcKML6pEwV9biNxDHg&usqp=CAU"  width="75" height="75" alt="" loading="lazy" class="d-inline-block align-top border rounded border-dark"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#section-1">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#section-2">Search</a>
+                <a class="nav-item nav-link" href="#section-3">About Us</a>
+              </div>
+            </div>
+          </nav>
+          <br>
+          <br>
+          <br>
+          <div class="container mp-20-lg" id="inputTabs">
+            <div class="column">
+              <div class="row">
+                  <input class="col border bg-light" type="search" placeholder="Search" id="searchBar">
+                  <div class="dropdown">
+                    </div>
+                    <button class="btn t-20 border " type="submit" style="background-color:rgb(216,56,38);" id="submitBtn">Submit</button>     
+                  </div>
+                </div>
+       <div class="mx-auto" style="width:200px" id="filterBtns">
+            <div class="form">
+                    <div class="form-row align-items-center" id="priceFilter" style="background-color: rgb(216,56,38) fill:rgb(216,56,38);" >
+                    <label class="col-auto my-1"  for="inlineFormCustomSelect"></label>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option selected>Price</option>
+                        <option value="1">$</option>
+                        <option value="2">$$</option>
+                        <option value="3">$$$</option>
+                        <option value="4">$$$$</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form">
+              <div class="form-row align-items-center" id="rateFilter" style="background-color: rgb(216,56,38) fill:rgb(216,56,38);" >
+              <label class="col-auto my-1"  for="inlineFormCustomSelect"></label>
+              <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                  <option selected>Rating</option>
+                  <option value="1">*</option>
+                  <option value="2">**</option>
+                  <option value="3">***</option>
+                  <option value="4">****</option>
+                  <option value="5">*****</option>
+              </select>
+          </div>
+      </div>
+
+        <div class="col-auto my-1" id="foodFilter" style="background-color: rgb(216,56,38) fill:rgb(216,56,38);">
+              <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect"></label>
+              <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                <option selected>Food Type</option>
+                <option value="1">Chinese</option>
+                <option value="2">Vegan</option>
+                <option value="3">Jamaican</option>
+                <option value="4">Vegan</option>
+                <option value="5">Mexican</option>
+                <option value="6">Vegetarian</option>
+                <option value="7">Italian</option>
+                <option value="8">Thai</option>
+                <option value="9">Mediterranean</option>
+              </select>
+            </div>
         </div>
-    </footer>
-       
+      </div>
+    </div>
+    
+  <!--About Us (Section 3)-->
 
+  <div class="section" id="section-3">
+      <h1 style="text-align:center">About Us</h1>
+      <div class="about-text">
+        <p>Foodie Finder was founded in 2020 out of passion to locate the best and most convienient restaraunts</p>
+        <p>We serve a community customers whom desire the options based on location.</p>
+
+
+      <h1 style="text-align:center">Our Team</h1>
+      <div class="row">
+        <div class="column">
+        <div class="card">
+          <img src="Ifeoma.png" alt="Ifeoma" style="width:100%">
+          <div class="container">
+          <h2>Ifeoma Last Name</h2>
+          <p class="title">CEO & Founder</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>Ifeoma@example.com</p>
+          <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+      <div class="card">
+        <img src="Spencer.png" alt="Spencer" style="width:100%">
+        <div class="container">
+          <h2>Ifeoma Last Name</h2>
+         <p class="title">COO</p>
+         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+         <p>Ifeoma@example.com</p>
+          <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+
+        <div class="column">
+      <div class="card">
+       <img src="BHill.png" alt="Brandon" style="width:90%">
+       <div class="container">
+         <h2>Brandon Hill</h2>
+         <p class="title">CEO & Founder</p>
+         <p>Some text that describes Spencer</p>
+         <p>Brandon@example.com</p>
+         <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+ <div class="column">
+     <div class="card">
+       <img src="Kendra.png" alt="Kendra" style="width:90%">
+       <div class="container">
+         <h2>Kendra Choice</h2>
+         <p class="title">CEO & Founder</p>
+         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+         <p>Spencer@example.com</p>
+         <p><button class="button">Contact</button></p>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+   <!--Footer-->
+   <main role="main" class="flex-shrink-0">
+    <div class="container-fluid">
+        <h1 class="mt-5"></h1>
+        <p class="lead"></p>
+        <p><a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/examples/sticky-footer-navbar/"></a> </p>
+        <div class="d-inline-block float-right">
+        </div>
+    </div>
+</main>
+
+<footer class="footer mt-auto py-3" style="background-color:#18b1d8;">
+    <div class="container-fluid">
+        <span class="text-muted">Foodie Finder LLC 2020 </span>
+    </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="jquery.nav.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#nav').onePageNav({
+      filter: ':not(.external)',
+    });
+  });
+</script>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
