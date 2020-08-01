@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    
 <!--Add comments-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -16,7 +18,7 @@
 <style>
 body {
     font-family: 'Open Sans Condensed', 'sans-serif';
-  margin: 100;
+  max-width: 100%;
 }
 html {
   box-sizing: border-box;
@@ -37,8 +39,6 @@ html {
 .about-section {
   padding: 0px;
   text-align: center;
-  background-color: #474e5d;
-  color: white;
   font-family: 'Open Sans Condensed', 'sans-serif';
 }
 .about-text {
@@ -74,9 +74,24 @@ html {
   background-color: #555;
 }
 
+@media screen and (max-width: 50%) {
+  .column {
+    width: 50%;
+    display: grid;
+  }
+
+  @media screen and (max-width: 100%) {
+  .card {
+    width: 100%;
+    display: grid;
+  }
+
+
 }
 
+
 </style>
+
 </head>
 
 <body>
