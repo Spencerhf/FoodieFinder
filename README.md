@@ -29,7 +29,7 @@ one more *method*
 For pngs/jpgs 
 <img src = "copy image address">
 
-### Add Foodie Gif
+### Add Test Foodie Gif
 ![alt text](https://media.giphy.com/media/BPofSmBGnwJIQ/giphy.gif)
 
 >Enter block quote here
