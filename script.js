@@ -2,6 +2,9 @@ var submitBtn = document.getElementById('submitBtn');
 
 var resultsContainer = document.getElementById('resultsContainer');
 
+var priceFilter = document.getElementById('priceFilter');
+
+
 let map;
 let service;
 let infowindow;
@@ -21,7 +24,7 @@ function locationIdFunc() {
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
-                "x-rapidapi-key": "b920e36c1emsh38fc765f3e3c7dbp10bccfjsne193d091d660"
+                "x-rapidapi-key": "5f545a0c82mshb2c03dc9e417f9bp1cfbdejsn37162ac5cefa"
             }
         }
         $.ajax(settings).done(function (response) {
@@ -43,7 +46,7 @@ function restaurantList(locationId) {
         "method": "GET",
         "headers": {
             "x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
-            "x-rapidapi-key": "b920e36c1emsh38fc765f3e3c7dbp10bccfjsne193d091d660"
+            "x-rapidapi-key": "5f545a0c82mshb2c03dc9e417f9bp1cfbdejsn37162ac5cefa"
         }
     } 
      $.ajax(settings).done(function (response) {
@@ -51,12 +54,19 @@ function restaurantList(locationId) {
         console.log(response.data);
         
             
-            console.log(response.data[0]);
+            resultsContainer.innerHTML = "";
             
             for(var i=0; i<response.data.length; i++) {
                 if(response.data[i].name == undefined) {
                     response.data.pop();
-                } else {
+                } 
+                else if(priceFilter.value != "") {
+                    var restaurantItem = filterPrice(response.data[i]);
+                    if(restaurantItem){
+                        resultsContainer.appendChild(restaurantItem);
+                    }
+                }
+                else {
                     
                     var restaurantItem = printCard(response.data[i]);
                     resultsContainer.appendChild(restaurantItem);
@@ -72,6 +82,7 @@ function restaurantList(locationId) {
 
 }
 
+/*Initializes Google map for the restaurant location when button is clicked*/
 function initMap(coords, response) {
     
     infowindow = new google.maps.InfoWindow();
@@ -99,7 +110,7 @@ function initMap(coords, response) {
     
 }
 
-
+/*Creates marker for the Google map and places it on restaurant locationj */
 function createMarker(place) {
     const marker = new google.maps.Marker({
       map,
@@ -111,6 +122,20 @@ function createMarker(place) {
     });
   }
 
+/* Filters the restaurants listings by price level string("$$$") using 
+   the price filter dropdown menu*/
+function filterPrice(response) {
+    let card = null;
+    if(priceFilter.value == response.price_level) {
+        card = printCard(response);
+    }
+    
+    return card;
+    
+    
+}
+
+/*Creates card containing all info about each restaurant */
 function printCard(response) {
     var cardElement = document.createElement('div');
     cardElement.className = "card mb-3 justify-content-center";
