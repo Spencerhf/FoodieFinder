@@ -29,6 +29,9 @@ one more *method*
 For pngs/jpgs 
 <img src = "copy image address">
 
+### Add Foodie Gif
+![alt text](https://media.giphy.com/media/BPofSmBGnwJIQ/giphy.gif)
+
 >Enter block quote here
 
 `var test = 10;`
