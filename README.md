@@ -1,16 +1,59 @@
 # FoodieFinder
-A place where foodies can come and find amazing food!
+FoodieFinder is a website which connects people with their favorite restaraunt in their city of choice. We do this by empowering them with access to data and in turn, generate new ways for people to search and find food. We see this as just the beginning of connecting people with possibility — easy decisions, happier days, and stronger communities. With your favorite restaurants at your fingertips, FoodFinder satisfies your cravings and connects you with possibilities.
+
+## Team Members
+* Brandon Hill
+* Ifeoma Ezekwe
+* Spencer Foreman
+* Kendra Choice
+
+## APIs:
+* Trip Advisor (restaurant information)
+* Google Maps (restaurant location)
+
+## Javascript Libraby
+* JQuery UI 
+* Multiples
+
+## CSS
+* Bootstrap
+
+## Branches
+* master
+* kendra
+* Ifeoma
+* Brandon
+
+## Scrum 
+* Planned and managed work via Trello
+* Completed class standups 
+
+## Deployment 
+* Pending?
 
 
-## Heading 2
-//Add Chicken Pie to your folder, should load with CSS file
 
 
 
-#### Heading 4
 
 
-###### Heading 6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Plain text
 
