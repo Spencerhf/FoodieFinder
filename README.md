@@ -34,13 +34,28 @@ FoodieFinder is a website which connects people with their favorite restaraunt i
 * Completed class standups 
 
 ## Features
-* Feature 1
-* Feature 2
-* Feature 3
-* Feature 5
+* Enable search of food item
+* Add Filters
+* Add Geolocate Food
+* About-Us page
+
 
 ## Deployment 
 * Pending?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
