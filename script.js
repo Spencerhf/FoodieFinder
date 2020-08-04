@@ -4,6 +4,8 @@ var resultsContainer = document.getElementById('resultsContainer');
 
 var priceFilter = document.getElementById('priceFilter');
 
+var foodTypeFilter = document.getElementById('foodTypeFilter');
+
 
 let map;
 let service;
@@ -62,6 +64,12 @@ function restaurantList(locationId) {
                 } 
                 else if(priceFilter.value != "") {
                     var restaurantItem = filterPrice(response.data[i]);
+                    if(restaurantItem){
+                        resultsContainer.appendChild(restaurantItem);
+                    }
+                }
+                else if(foodTypeFilter.value != "") {
+                    var restaurantItem = filterCuisine(response.data[i]);
                     if(restaurantItem){
                         resultsContainer.appendChild(restaurantItem);
                     }
@@ -135,6 +143,17 @@ function filterPrice(response) {
     
 }
 
+function filterCuisine(response) {
+    let card = null;
+    for(let i = 0; i < response.cuisine.length; i++) {
+        if(foodTypeFilter.value == response.cuisine[i].name) {
+            card = printCard(response);
+        }
+    }
+
+    return card;
+}
+
 /*Creates card containing all info about each restaurant */
 function printCard(response) {
     var cardElement = document.createElement('div');
@@ -197,5 +216,5 @@ function printCard(response) {
 
 }
 
-//locationIdFunc();
+
 
