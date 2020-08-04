@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
     
@@ -29,14 +29,18 @@ html {
   box-sizing: inherit;
 }
 .column {
-  float: left;
-  width: 25%;
+
+  display: flex;
   margin-bottom: 16px;
   padding: 0 8px;
 }
 .card {
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
   margin: 15px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .about-section {
   padding: 0px;
@@ -76,20 +80,27 @@ html {
   background-color: #555;
 }
 
-@media screen and (max-width: 50%) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .column {
     width: 50%;
-    display: grid;
-  }
 
-  @media screen and (max-width: 100%) {
-  .card {
-    width: 100%;
     display: grid;
   }
+  .about-text {
+    margin-right: 0;
+    margin-left: 0;
   }
 
 }
+  /* @media screen and (max-width: ) 
+  .card {
+    width: 100%;
+    display: grid;
+  } */
+  
+  
+
+
 
 
 </style>
@@ -99,29 +110,26 @@ html {
 <body>
    
 <!---Nav Bar--->
-    <nav class="navbar navbar-light" height="100px" style="background-color:#18b1d8">
-        <a class="navbar-brand" href="#">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRdNZtiaxypcb2wo3XgNcKML6pEwV9biNxDHg&usqp=CAU"  width="75" height="75" alt="" loading="lazy" class="d-inline-block align-top border rounded border-dark"></i>
-        </a>
-        <div class="container">
-        <div class="row justify-content-center" id="headerText">
-        <h1 class="text-dark-50 col-lg-12 text-center" style="background-color:#18b1d8"> Foodie Finder</h1>
-        </div>
-        </div>
-      </nav>
-      <div class="collapse navbar-collapse justify-content-end"  id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#section-1">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#section-2">Search</a>
-          <a class="nav-item nav-link" href="#section-3">About Us</a>
-        </div>
-      </div>
-    </nav>
-          <img src="Foodie-Finder- (1).svg" class="animate__animated animate__backInDown text-dark-50 col-lg-12 text-center"  id="homeText"></img>
-          <h2 class="animate__animated animate__rubberBand col-lg-12 text-center" id="slogan"> Find.Food.Fast<span style="color: rgb(216,56,38)">! </span> </h2>
-      </div>
-  </div>
-  
+
+      <div class="container-fluid">
+        <div class="section" id="section-1">
+          <nav class="navbar navbar-expand-lg" style="background-color: #18b1d8;width:inherit">
+            <a class="navbar-brand" href="#">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRdNZtiaxypcb2wo3XgNcKML6pEwV9biNxDHg&usqp=CAU"  width="75" height="75" alt="" loading="lazy" class="d-inline-block align-top border rounded border-dark"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Start of Navbar Collapse-->
+            <div class="collapse navbar-collapse justify-content-end"  id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#section-1">Home <span class="sr-only">(current)</span></a>
+              </div>
+            </div> <!-- End of Navbar Collapse -->
+          </nav>
+
+        </div> <!--End of Section 1 -->
+      </div> <!-- End of Container Fluid -->
 
       
 
@@ -139,51 +147,47 @@ html {
 <!--Cards Displayed on Page-->
 <h1 style="text-align:center">Our Team</h1>
 <div class="row">
-  <div class="column">
+  <div class="column col-12 col-lg-6">
     <div class="card">
-      <img src="Ifeoma.png" alt="Ifeoma" style="width:100%">
+      <img src="Ifeoma.png" alt="Ifeoma" class="img-fluid">
       <div class="container">
         <h2>Ifeoma Ezekwe</h2>
         <p class="title">CEO & Founder</p>
-        <p>Ifeoma@example.com</p>
-        <p><button class="button">Contact</button></p>
+        
       </div>
     </div>
   </div>
-  <div class="column">
+  <div class="column col-12 col-lg-6">
     <div class="card">
-      <img src="Spencer.png" alt="Spencer" style="width:100%">
+      <img src="Spencer.png" alt="Spencer" class="img-fluid">
       <div class="container">
         <h2>Spencer Foreman</h2>
         <p class="title">CEO & Founder</p>
-        <p>@example.com</p>
-        <p><button class="button">Contact</button></p>
+        
       </div>
     </div>
   </div>
-  <div class="column">
+  <div class="column col-12 col-lg-6">
     <div class="card">
-      <img src="BHill.png" alt="Brandon" style="width:90%">
+      <img src="BHill.png" alt="Brandon" class="img-fluid">
       <div class="container">
         <h2>Brandon Hill</h2>
         <p class="title">CEO & Founder</p>
-        <p>Brandon@example.com</p>
-        <p><button class="button">Contact</button></p>
+
       </div>
     </div>
   </div>
-  <div class="column">
+  <div class="column col-12 col-lg-6">
     <div class="card">
-      <img src="Kendra.png" alt="Kendra" style="width:90%">
+      <img src="Kendra.png" alt="Kendra" class="img-fluid">
       <div class="container">
         <h2>Kendra Choice</h2>
         <p class="title">CEO & Founder</p>
-        <p>Spencer@example.com</p>
-        <p><button class="button">Contact</button></p>
+        
       </div>
     </div>
   </div>
-</div>
+</div> <!--End of Row-->
 </div>
 
 
