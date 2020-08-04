@@ -1,7 +1,7 @@
 # FoodieFinder
 FoodieFinder is a website which connects people with their favorite restaraunt in their city of choice. We do this by empowering them with access to data and in turn, generate new ways for people to search and find food. We see this as just the beginning of connecting people with possibility — easy decisions, happier days, and stronger communities. With your favorite restaurants at your fingertips, FoodFinder satisfies your cravings and connects you with possibilities.
 
-### Add Images 
+
 ![alt text](file:///Users/kendrachoice/pmp-foodie/FoodieFinder/Ifeoma.png)
 
 
