@@ -24,13 +24,20 @@ For pngs/jpgs
 
 ## Branches
 * master
-* kendra
+* Spencer
+* Kendra
 * Ifeoma
 * Brandon
 
 ## Scrum 
-* Planned and managed work via Trello
+* Planned and managed work via Trello - <img src = "https://trello.com/b/d4LZksJy/foodie-finder-project">
 * Completed class standups 
+
+## Features
+* Feature 1
+* Feature 2
+* Feature 3
+* Feature 5
 
 ## Deployment 
 * Pending?
