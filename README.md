@@ -37,6 +37,7 @@ FoodieFinder is a website which connects people with their favorite restaraunt i
 * Enable search of food item
 * Add Filters
 * Add Geolocate Food
+* Display results
 * About-Us page
 
 
@@ -68,48 +69,3 @@ FoodieFinder is a website which connects people with their favorite restaraunt i
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-Plain text
-
-This is an **emphasize** text
-
-This is _italisized_ text
-
-one more *method*
-
-### Heading 3 Bullet points
-* Number 1
-* Number 2
-* Number 3
-
-### Add Images
-For pngs/jpgs 
-<img src = "copy image address">
-
-### Add Test Foodie Gif
-![alt text](https://media.giphy.com/media/BPofSmBGnwJIQ/giphy.gif)
-
->Enter block quote here
-
-`var test = 10;`
-
-```
-hello {
-code entered
-here
-and 
-here
-}
-```
