@@ -30,7 +30,7 @@ For pngs/jpgs
 * Brandon
 
 ## Scrum 
-* Planned and managed work via Trello - <img src = "https://trello.com/b/d4LZksJy/foodie-finder-project">
+* [Planned/Organized/Tracked work via Trello](https://trello.com/b/d4LZksJy/foodie-finder-project) 
 * Completed class standups 
 
 ## Features
